@@ -7,7 +7,7 @@ The UTC clock follows the same GNOME settings as the system clock (`clock-format
 ## Requirements
 
 - GNOME Shell 45+ (Ubuntu 24.04 and newer)
-- Session restart after first install on Wayland
+- A full log out / log in after the first install on Wayland (Ubuntu’s default)
 
 ## Install
 
@@ -17,13 +17,20 @@ cd dual-panel-clock
 make install
 ```
 
-Log out and back in (Wayland), then:
+**Then log out and log back in** (required on Wayland before the Shell knows the extension exists). After that:
 
 ```bash
 make enable
 ```
 
-Or enable via **Extensions** / `gnome-extensions-app`.
+Confirm it is visible to the Shell:
+
+```bash
+make status
+# or: gnome-extensions list | grep dual-panel
+```
+
+If `make enable` says the extension does not exist, the session was not restarted yet — log out/in and try enable again.
 
 ## Uninstall
 
