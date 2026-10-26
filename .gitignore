@@ -1,0 +1,4 @@
+*.shell-extension.zip
+*.zip
+*~
+.DS_Store

@@ -1,0 +1,11 @@
+/* Match the system clock weight/spacing; keep UTC visually secondary. */
+.dual-panel-clock-label {
+    font-weight: bold;
+    padding-left: 4px;
+    padding-right: 8px;
+}
+
+.dual-panel-clock {
+    -natural-hpadding: 6px;
+    -minimum-hpadding: 4px;
+}

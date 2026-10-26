@@ -1,0 +1,9 @@
+{
+  "uuid": "dual-panel-clock@tensys.ai",
+  "name": "Dual Panel Clock",
+  "description": "Keep the system local clock as-is and add a matching UTC clock (date + time) beside it on the top bar.",
+  "version": 1,
+  "shell-version": ["45", "46", "47", "48", "49"],
+  "url": "https://github.com/Stariller/dual-panel-clock",
+  "gettext-domain": "dual-panel-clock"
+}
